@@ -1,0 +1,8 @@
+# Request the device information from the device.
+
+
+---
+string device_name          # The name of the device
+string serial_number        # The serial number of the device
+string firmware_version     # The firmware version of the device
+string host_version         # The host version of the device
