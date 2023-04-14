@@ -6,6 +6,7 @@ Changelog for package face_msgs
 ------------------
 * Replace face array with single one when enroll a face.
 * Replace name with id when remove a user to maintain consistency.
+* Replace confidence with score.
 
 1.0.0 (13-04-2023)
 ------------------
