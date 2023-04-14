@@ -2,4 +2,4 @@
 
 string 			id 				# Id of the user
 ---
-Face[] 			faces			# Faces of the users
+Face 			face			# Face of the enrolled user
