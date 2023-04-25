@@ -2,6 +2,10 @@
 Changelog for package face_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.0 (25-04-2023)
+------------------
+* Prepare for humble release.
+
 1.1.0 (14-04-2023)
 ------------------
 * Replace face array with single one when enroll a face.
