@@ -1,5 +1,6 @@
 # Request / response service to remove specific user from the device
 
-string 			id 			# Id of the user
+# ID of the user
+string id
 ---
 

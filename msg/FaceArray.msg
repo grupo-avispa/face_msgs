@@ -1,4 +1,6 @@
 # Array of Face message
 
-std_msgs/Header 		header			# Header
-Face[] 					faces			# Faces of the users
+std_msgs/Header header
+
+# Array of faces
+Face[] faces

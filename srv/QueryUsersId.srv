@@ -2,5 +2,8 @@
 
 
 ---
-uint32 				number_users		# Number of users
-string[] 			users_id			# Id of the users
+# Number of users
+uint32 number_users
+
+# IDd of the users
+string[] users_id

@@ -1,5 +1,7 @@
 # Request / response service to perform one enrollment for one new user
 
-string 			id 				# Id of the user
+# ID of the user
+string id
 ---
-Face 			face			# Face of the enrolled user
+# Face of the enrolled user
+Face face

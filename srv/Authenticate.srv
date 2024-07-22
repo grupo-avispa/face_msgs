@@ -2,4 +2,5 @@
 
 
 ---
-Face[] 				faces			# Faces of the users
+# Faces of the users
+Face[] faces
