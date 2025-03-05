@@ -2,6 +2,10 @@
 Changelog for package face_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.1 (05-03-2025)
+------------------
+* First jazzy release.
+
 1.2.0 (25-04-2023)
 ------------------
 * Prepare for humble release.
