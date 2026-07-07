@@ -12,15 +12,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    container:
+      image: ros:jazzy
     steps:
+      - name: Install global dependencies
+        run: |
+          apt update && apt install --no-install-recommends -y \
+            python3-pip python3-colcon-coveragepy-result
       - name: Checkout Repository
-        uses: actions/checkout@v4.1.6
-      - name: Setup ROS 2
-        uses: ros-tooling/setup-ros@0.7.5
-        with:
-          required-ros-distributions: jazzy
+        uses: actions/checkout@v7
       - name: Install dependencies
-        uses: ros-tooling/action-ros-ci@0.3.13
+        uses: ros-tooling/action-ros-ci@0.4.8
         with:
           package-name: face_msgs
           target-ros2-distro: jazzy
@@ -35,15 +37,17 @@ jobs:
             }
           skip-tests: false
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4.4.1
+        uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ros_ws/lcov/total_coverage.info,ros_ws/coveragepy/.coverage
           flags: unittests
           name: codecov-umbrella
+          slug: ajtudela/face_msgs
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v1
+        uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: unittests
+          report_type: test_results
