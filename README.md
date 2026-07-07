@@ -1,7 +1,8 @@
 # face_msgs
 
-![ROS2](https://img.shields.io/badge/ros2-humble-blue?logo=ros&logoColor=white)
-![License](https://img.shields.io/github/license/ajtudela/face_msgs)
+![ROS2](https://img.shields.io/badge/ros2-jazzy-blue?logo=ros&logoColor=white)
+![License](https://img.shields.io/github/license/grupo-avispa/face_msgs)
+[![Build](https://github.com/grupo-avispa/face_msgs/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/grupo-avispa/face_msgs/actions/workflows/build.yml)
 
 ## Overview
 This package provides messages and services relating to face recognition.
